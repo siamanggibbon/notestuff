@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+
+    "name": "Note Stuff",
+    "description": "Write stuff and store it",
+    "version": "0.1",
+    "permissions": [],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
