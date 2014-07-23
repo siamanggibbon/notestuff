@@ -57,11 +57,16 @@ textarea {
 	white-space: pre;
 }
 
+textarea.saved {
+	outline: black solid 1px;
+}
+
 p {
 	text-align: center;
 }
 
 p.status {
+
 	opacity: 0;
 }
 
