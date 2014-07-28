@@ -73,3 +73,15 @@ p.status {
 p.status.fade {
 	opacity: 1;
 }
+
+.close {
+	position: fixed;
+	top: 4px;
+	right: 10px;
+	cursor: default
+}
+
+.close:hover {
+	color: red;
+
+}

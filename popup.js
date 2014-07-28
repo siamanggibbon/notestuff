@@ -6,9 +6,11 @@
         status,
         newNode,
         saved,
-        statusRemove;
+        statusRemove,
+        closeBtn;
 
     newNote = document.getElementsByTagName("textarea")[0];
+    closeBtn = document.getElementsByClassName("close")[0];
 
     if (localStorageAvail() === false) {
         newNote.value = "There is a problem with localStorage.  Notes will not be saved.";
@@ -18,6 +20,7 @@
 
     // add new notes
     newNote.addEventListener("input", addNote, false);
+    closeBtn.addEventListener("click", closePopup, false);
 
     // get saved notes into textbox
     saved = localStorage.getItem("note");
@@ -60,6 +63,10 @@
         } catch (e) {
             return false;
         }
+    }
+
+    function closePopup() {
+        window.close();
     }
 
 })();
